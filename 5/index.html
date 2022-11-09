@@ -1,0 +1,104 @@
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+  <title>Tarea Online 1</title>
+  <style>
+  body  {
+  background-color: SlateBlue;
+  color: white;
+  text-align: center;
+  margin-left:1in;
+  margin-right:1in;
+  }
+  inicio {
+  color: white;
+  text-decoration: none;
+  left:1%;
+  position: absolute;
+  font-size: medium;
+  border-style:outset;
+  padding: 2px;
+  }
+  inicio:hover{
+  color:black;
+  }
+  #alumno {
+  top: 90%;
+  text-align: center;
+  }
+  #contenido{
+  text-align: justify;
+  }
+  
+  </style>
+</head>
+<body>
+	<a id="inicio" href="../../que_luq_m/index.html"><b>Inicio</b></a>
+	<h1>Ejercicio 5</h1>
+		<br>
+		<h3>a) ¿Qué es un control de versiones? ¿Qué diferencias hay entre uno centralizado y otro distribuido?</h3>
+		
+			<div id="contenido">
+			Un <b>control de versiones</b> es la gestión de cambios que se realizan sobre algún producto o configuración del mismo. 
+			Tiene distintos estados, como son la versión, revisión o edición del producto. Se puede realizad de forma manual pero es aconsejable disponer de 
+			herramientas que faciliten esta gestión, llamados sistemas de control de versiones o VCS. <br>
+			Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones 
+			realizadas (por ejemplo, para algún cliente específico). Ejemplos de este tipo de herramientas son entre otros: CVS, Subversion, SourceSafe, ClearCase, 
+			Darcs, Bazaar, Plastic SCM, Git, SCCS, Mercurial, Perforce, Fossil SCM, Team Foundation Server.<br>
+			El control de versiones se realiza principalmente en la industria informática para controlar las distintas versiones del código fuente dando lugar 
+			a los sistemas de control de código fuente o SCM (siglas del inglés Source Code Management). Sin embargo, los mismos conceptos son aplicables a 
+			otros ámbitos como en trabajo de oficina tales como documentos, imágenes, sitios web, etc.<br>
+			El <b>control de versiones distribuido</b> toma un enfoque entre iguales (peer-to-peer), opuesto al enfoque de cliente-servidor de los <b>sistemas centralizados</b>. 
+			En lugar de un único repositorio central en el cual los clientes se sincronizan, la copia local del código base de cada peer es un repositorio completo.<br>
+			El <b>control de versiones distribuido</b> sincroniza los repositorios intercambiando ajustes (conjuntos de cambios) entre iguales. 
+			Esto establece algunas diferencias importantes en comparación a un sistema centralizado:
+			<ul>
+				<li>No existe una copia de referencia del código base por defecto; solo copias de trabajo.</li>
+				<li>Operaciones comunes (como commits, visualización del historial, y revertir cambios) son rápidas, porque no existe necesidad de comunicación con un servidor central.</li>
+				<li>La comunicación con el servidor sólo es necesaria cuando se comparten cambios entre iguales (peers).</li>
+				<li>Cada copia de trabajo funciona efectivamente como una copia de seguridad remota del codebase y de su historial de cambios, protegiéndolo de la pérdida de datos.</li>
+			</ul>
+			Otras diferencias incluyen:
+			<ul>
+				<li>Múltiples repositorios “centrales”.</li>
+				<li>El código discrepante de los repositorios es fusionado sobre la base de una red de confianza. Por ejemplo, el histórico de méritos o calidad de cambios.</li>
+				<li>Numerosos modelos de desarrollo diferentes son posibles, como el desarrollo/lanzamiento de ramas de un modelo Comandante/Teniente, permitiendo la delegación eficiente del desarrollo de tópicos in proyectos de gran tamaño. Los tenientes son proyectos miembro que tienen la capacidad de decidir de forma dinámica qué ramas unificar (fusionar).</li>
+				<li>La red no está involucrada en operaciones comunes.</li>
+				<li>Un conjunto separado de operaciones de sincronización están disponibles para confirmar o recibir cambios con repositorios remotos.</li>
+			</ul>
+			Los propulsores del control de versiones distribuido señalan numerosas ventajas de los sistemas de control de versiones distribuido sobre el modelo centralizado tradicional:
+			<ul>
+				<li>Permite a los usuarios trabajar de forma productiva cuando no están conectados a la red.</li>
+				<li>Realiza las operaciones más rápido.</li>
+				<li>Permite la participación en proyectos sin requerir permiso de las autoridades, y por lo tanto fomenta la cultura de la meritocracia.</li>
+				<li>Permite el trabajo en forma privada, de modo que los usuarios pueden utilizar sus cambios incluso en iteraciones intermedias que no quieren publicar.</li>
+				<li>Evita confiar en una única máquina física como único punto de fallas.</li>
+				<li>Permite el control centralizado de las versiones de lanzamiento del proyecto.</li>
+				<li>En proyectos de software FLOSS es mucho más fácil crear una bifurcación del proyecto desde un proyecto que está detenido por los conflictos de liderazgo o desacuerdos en el diseño.</li>
+			</ul>
+			</div>
+			
+		<h3>¿Qué es Git? ¿Y GitHub? ¿En qué se diferencian y cómo se relacionan entre sí?</h3>
+			
+			<div id="contenido">
+			<b>Git</b> es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora incluyendo coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código.<br>
+			<b>GitHub</b> es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. Anteriormente era conocida como Logical Awesome LLC. El código de los proyectos alojados en GitHub se almacena generalmente de forma pública.<br>
+			La diferencia principal entre Git y GitHub es que Git es una herramienta de código abierto que los desarrolladores instalan localmente para gestionar el código fuente, mientras que GitHub es un servicio en línea al que los desarrolladores que utilizan Git pueden conectarse y cargar o descargar recursos.
+			</div>
+			
+		<h3>c) Hazte una cuenta, si no la tienes, en GitHub con un nombre de usuario serio y profesional.</h3>
+			
+			<div id="contenido">
+			<a href="https://github.com/manuquero96" target="_blank">Mi GitHub</a>
+			</div>
+			
+		<h3>d) Crea un proyecto en GitHub de una aplicación web tuya y usa Git para subir el código.</h3>
+			
+			<div id="contenido">
+			He subido todo el Ejercicio Unidad 1 a GitHub a este <a href="https://github.com/manuquero96/ejercicio1_DWES" target="_blank">repositorio</a>.
+			</div>
+		<br>
+		<div id="alumno">Manuel Quero Luque</div>
+</body>
+</html>
+

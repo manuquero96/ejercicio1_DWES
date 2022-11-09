@@ -1,0 +1,80 @@
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+  <title>Tarea Online 1</title>
+  <style>
+	  body{
+		  background-color:#262262;
+		  text-align: center;
+		  color: white;
+		  }
+  #inicio {
+	  color: white;
+	  text-decoration: none;
+	  left:1%;
+	  position: absolute;
+	  font-size: medium;
+	  border-style:outset;
+	  padding: 2px;
+	  }
+	#inicio:hover{
+	  color:black;
+	  }
+	  
+	[type=radio] { 
+	  position: absolute;
+	  opacity: 0;
+	  width: 0;
+	  height: 0;
+	}
+
+	[type=radio] + img {
+	  cursor: pointer;
+	}
+
+	[type=radio]:checked + img {
+	   transform: scale(1.2); 
+	}
+	}
+  </style>
+  </head>
+  <body>
+  <a id="inicio" href="../../../que_luq_m/index.html"><b>Inicio</b></a>
+  
+  <form action="juego.php" method="post" id="formulario">
+  <h2>Elige una opción</h2>
+  
+  <label>
+  <input type="radio" value="piedra" name="opciones" checked>
+  <img src="../a/img/piedra.png" alt="piedra">
+  </label>
+  
+  <label>
+  <input type="radio" value="papel" name="opciones">
+    <img src="../a/img/papel.png" alt="papel">
+  </label>
+  
+  <label>
+  <input type="radio" value="tijera" name="opciones">
+  <img src="../a/img/tijera.png" alt="tijera">
+  </label>
+  
+  <label>
+  <input type="radio" value="lagarto" name="opciones">
+  <img src="../a/img/lagarto.png" alt="lagarto">
+  </label>
+  
+  <label>
+  <input type="radio" value="spock" name="opciones">
+  <img src="../a/img/spock.png" alt="spock">
+  </label>
+  <br>
+  <br>
+  <input type="submit" value="Enviar" id="enviar">
+  
+  </form>
+  
+ 
+  
+  </body>
+ </html>

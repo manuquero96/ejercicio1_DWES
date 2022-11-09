@@ -1,0 +1,54 @@
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<title>Tarea Online 1</title>
+		<style>
+		body{
+			background-color: b50707;
+			text-align: center;
+			}
+		#inicio {
+			color: white;
+			text-decoration: none;
+			left:1%;
+			position: absolute;
+			font-size: medium;
+			border-style:outset;
+			padding: 2px;
+			}
+		#inicio:hover{
+			color:black;
+			}
+		form{
+			background-color: white;
+			display: inline-block;
+			width: auto;
+			height: auto;
+			padding: 15px;
+			}
+		input{
+			margin: 5px;
+			padding: 5px;
+			width: 90%;
+			}
+		#enviar{
+			background-color: b50707;
+			color: white;
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<a id="inicio" href="../../../que_luq_m/index.html"><b>Inicio</b></a>
+				
+		<form action="calculo.php" method="post" id="formulario">
+		<h2>Calcular área y longitud</h2>
+		<label for="lado" >Introduce el lado y pulse Calcular.</label><br>
+		<input type="number" step="any" name="lado" placeholder="Lado (mm)"><br>
+		<input type="submit" name="enviar" id="enviar" value="Enviar">
+		
+		</form>
+		
+	</body>
+</html>

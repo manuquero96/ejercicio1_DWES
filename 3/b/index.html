@@ -1,0 +1,150 @@
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+  <title>Tarea Online 1</title>
+  <style>
+	  body{
+		  background-color: 88C34D;
+		  text-align: center;
+		  }
+	
+	form{
+		background-color: DADADA;
+		display: inline-block;
+		width: 400px;
+		height: auto;
+		padding-bottom: 30px;
+		}
+	
+	input, textarea{
+		margin: 5px;
+		padding: 5px;
+		width: 80%;
+		
+		}
+	input[type='checkbox']{
+		width: auto;
+		
+		}
+	#enviar{
+		width: 80%;
+		background-color: 88C34D;
+		color: white;
+		}
+
+    #inicio {
+	  color: white;
+	  text-decoration: none;
+	  left:1%;
+	  position: absolute;
+	  font-size: medium;
+	  border-style:outset;
+	  padding: 2px;
+	  }
+	#inicio:hover{
+	  color:black;
+	  }
+	  #conducir{
+		  width: 80%;
+		  text-align: center;
+		  
+		  }
+	option{
+		border: black solid 1px;
+	}
+  </style>
+   <head>
+<body>
+		
+	<a id="inicio" href="../../../que_luq_m/index.html"><b>Inicio</b></a>
+	
+	<form action="cv.php" method="post" id="formulario">
+	<h2>Generador de CV</h2>
+	<p>Rellene los campos y puslse Enviar.</p>
+	<h3>Datos Personales</h3>
+	<label for="nombre">Nombre y apellidos</label><br>
+	<input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos" required><br>
+	<label for="email">Correo eléctrico</label><br>
+	<input type="email" name="email" id="email" placeholder="Correo eléctrico" required><br>
+	<label for="telefono">Teléfono</label><br>
+	<input type="number" name="telefono" id="telefono" placeholder="Teléfono" required><br>
+	<label for="nacimiento">Fecha de nacimiento</label><br>
+	<input type="date" min="1960-01-01" name="nacimiento" id="nacimiento" required><br>
+	
+	<h3>Experiencia Laboral</h3>
+	<label for="experiencia_nombre">Nombre del puesto</label><br>
+	<input type="text" name="experiencia_nombre" id="experiencia_nombre" placeholder="Nombre del puesto" required><br>
+	<label for="experiencia_empresa">Nombre de la empresa</label><br>
+	<input type="text" name="experiencia_empresa" id="experiencia_empresa" placeholder="Nombre de la empresa" required><br>
+	<label for="experiencia_fecha_inicio">Fecha inicio</label><br>
+	<input type="date" min="1950-01-01" name="experiencia_fecha_inicio" id="experiencia_fecha_inicio" required><br>
+	<label for="experiencia_fecha_fin">Fecha fin</label><br>
+	<input type="date" min="1950-01-01" name="experiencia_fecha_fin" id="experiencia_fecha_fin" required><br>
+	<label for="experiencia_funciones">Funciones realizadas</label><br>
+	<textarea rows="4" cols="50" name="experiencia_funciones" id="experiencia_funciones" form="formulario" placeholder="Opcional"></textarea>
+	
+	<h3>Formación</h3>
+	<label for="formacion_nombre">Titulación</label><br>
+	<input type="text" name="formacion_nombre" id="formacion_nombre" placeholder="Título" required><br>
+	<label for="formacion_instituto">Institución</label><br>
+	<input type="text" name="formacion_instituto" id="formacion_instituto" placeholder="Centro" required><br>
+	<label for="formacion_fecha_inicio">Fecha inicio</label><br>
+	<input type="number" placeholder="YYYY" min="1950" max="2022" name="formacion_fecha_inicio" id="formacion_fecha_inicio" required><br>
+	<label for="formacion_fecha_fin">Fecha fin</label><br>
+	<input type="number" placeholder="YYYY" min="1950" max="2022" name="formacion_fecha_fin" id="formacion_fecha_fin" required><br>
+	
+	<h3>Idiomas</h3>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="ingles" value="Inglés">
+	<label for="ingles">Inglés</label>
+	</div>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="frances" value="Francés">
+	<label for="frances">Francés</label>
+	</div>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="aleman" value="Alemán">
+	<label for="aleman">Alemán</label>
+	</div>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="italiano" value="Italiano">
+	<label for="italiano">Italiano</label>
+	</div>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="chino" value="Chino">
+	<label for="chino">Chino</label>
+	</div>
+	<div>
+	<input type="checkbox" name="idiomas[]" id="japones" value="Japonés">
+	<label for="japones">Japonés</label>
+	</div>
+
+
+	<h3>Competencias Digitales</h3>
+	<label for="competencias">Mis capacidades digitales</label><br>
+	<textarea rows="4" cols="50" name="competencias" id="competencias" form="formulario" placeholder="Opcional"></textarea>
+	
+	<h3>Permiso de conducir</h3>
+	<label for="conducir">Tipo de carnet</label>
+      <select name="conducir[]" id="conducir" size="4" multiple>
+        <option value="AM">AM</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="B + E">B + E</option>
+        <option value="C1">C1</option>
+        <option value="C + E:">C + E:</option>
+        <option value="D1">D1</option>
+        <option value="D1 + E">D1 + E</option>
+        <option value="D">D</option>
+        <option value="D + E">D + E</option>
+        
+      </select>
+	
+	<input type="submit" value="Enviar" id="enviar">
+	
+	</form>
+	
+</body>
+</html>

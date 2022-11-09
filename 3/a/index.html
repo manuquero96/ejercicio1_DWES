@@ -1,0 +1,62 @@
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+  <title>Tarea Online 1</title>
+  <style>
+	body{
+		  background-color: 88C34D;
+		  text-align: center;
+		  }
+	
+	form{
+		background-color: DADADA;
+		display: inline-block;
+		width: auto;
+		height: auto;
+		padding-bottom: 30px;
+		}
+	
+	input, textarea{
+		margin: 5px;
+		padding: 5px;
+		width: 80%;
+		
+		}
+	
+	#enviar{
+		width: 80%;
+		background-color: 88C34D;
+		color: white;
+		}
+
+	#inicio {
+	  color: white;
+	  text-decoration: none;
+	  left:1%;
+	  position: absolute;
+	  font-size: medium;
+	  border-style:outset;
+	  padding: 2px;
+	  }
+	#inicio:hover{
+	  color:black;
+	  }
+  </style>
+  <head>
+<body>
+	<a id="inicio" href="../../../que_luq_m/index.html"><b>Inicio</b></a>
+	<form action="usuario.php" method="post" id="formulario">
+	<h2>Formulario sencillo</h2>
+	<p>Rellene los campos y puslse Enviar.</p>
+	<input type="text" name="nombre" placeholder="Nombre y apellidos" required><br>
+	<input type="email" name="email" placeholder="Correo eléctrico" required><br>
+	<input type="number" name="telefono" placeholder="Teléfono (opcional)"><br>
+	<input type="text" name="web" placeholder="Sitio web personal (opcinal)"><br>
+	<textarea rows="4" cols="50" name="consulta" form="formulario" placeholder="Escriba su consulta aquí:" required></textarea>
+	
+	<input type="submit" value="Enviar" name="submit" id="enviar">
+	
+	</form>
+
+</body>
+</html>
